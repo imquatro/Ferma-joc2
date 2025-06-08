@@ -1,0 +1,230 @@
+/* ===== GENERAL ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Fără scroll global */
+    height: 100vh;
+}
+
+/* ===== HEADER ===== */
+.header-profil {
+    background: #004d40;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-continut {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.ferma-container {
+    max-width: 800px;
+    margin: 60px auto 110px auto; /* spațiu pt header și footer */
+    padding: 0 20px;
+    height: calc(100vh - 150px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* fix fără scroll */
+}
+
+/* ===== SECȚIUNE PROFIL ===== */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.profile-avatar {
+    width: 140px;
+    height: 140px;
+    border: 4px solid #00796b;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    margin: 0 0 10px 0;
+    color: #004d40;
+}
+
+.profile-info p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+/* ===== GALERIA DE POZE ===== */
+.ferma-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+/* zona de poze */
+.sloturi-ferma {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+}
+
+/* fiecare poza */
+.slot-ferma {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    background: white;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 4px;
+}
+
+.slot-ferma img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.slot-ferma p,
+.slot-ferma a {
+    font-size: 10px;
+    margin-top: 4px;
+    text-align: center;
+    color: #00796b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.slot-ferma form {
+    width: 100%;
+}
+
+.slot-ferma form button {
+    margin-top: 4px;
+    padding: 4px 6px;
+    font-size: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d32f2f;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.slot-ferma form button:hover {
+    background-color: #9a0007;
+}
+
+/* ===== LINK ÎNCĂRCARE ===== */
+.btn-logout {
+    background: #00796b;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.btn-logout:hover {
+    background: #004d40;
+}
+
+/* ===== MENIU JOS ===== */
+.meniu-box {
+    background: white;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+
+    position: fixed;
+    bottom: 75px; /* ridicat mai sus fata de footer */
+    left: 50%;
+    transform: translateX(-50%);
+
+    max-width: 760px;
+    width: 100%;
+    padding: 0 20px; /* padding lateral egal cu ferma-container */
+    box-sizing: border-box; /* sa includa padding in latime */
+    z-index: 999;
+}
+
+.meniu-continut {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.meniu-continut a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.meniu-continut a.active,
+.meniu-continut a:hover {
+    background: #00796b;
+    color: white;
+}
+
+/* ===== FOOTER ===== */
+.footer-bar {
+    background: #004d40;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}

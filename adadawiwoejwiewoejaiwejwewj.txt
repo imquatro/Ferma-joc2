@@ -1,0 +1,90 @@
+ferma-joc/
+│
+├── admin.php               # Panoul admin
+├── bunvenit.php            # Pagina start (login & register)
+├── game_index.php          # Pagina principală a jocului (ferma + meniu)
+├── profile.php             # Profil jucător (setări, galerie foto)
+├── logout.php              # Logout (acum în includes)
+│
+├── includes/
+│   ├── auth.php            # Funcții login/register/session (ex: autentificare, inregistrare, delogare)
+│   ├── baza_date.php       # Conexiune DB (PDO)
+│   ├── farm.php            # Funcții ferma, magazin, tokeni, bani
+│   ├── helpers.php         # Funcții utile
+│   ├── login.php           # Logica login (dacă ai script separat)
+│   ├── inregistrare.php    # Logica înregistrare (dacă ai script separat)
+│   └── logout.php          # Logica deconectare
+│
+├── css/
+│   ├── login.css           # Stil pentru login + înregistrare (un singur css comun)
+│   ├── welcome.css         # Stil pentru pagina bunvenit.php (opțional, dacă vrei stil separat)
+│   ├── game_index.css      # Stil pentru joc (sloturi ferme, meniu)
+│   ├── profile.css         # Stil pentru profil jucător
+│   ├── admin.css           # Stil pentru panoul admin
+│   └── farm.css            # Stil pentru ferma, magazin, gameplay
+│
+└── assets/
+    ├── imagini/
+    ├── sunete/
+    └── logo.png
+
+	
+	
+	Plan pas cu pas pentru început:
+Creează folderul principal pe desktop:
+ferma-joc
+
+În interior, creează folderele:
+
+include
+
+css
+
+resurse
+
+resurse/imagini
+
+resurse/imagini/animale
+
+resurse/imagini/plante
+
+resurse/imagini/icoane
+
+resurse/sunete
+
+În folderul principal, creează fișierele goale:
+
+bunvenit.php
+
+joc_index.php
+
+profil.php
+
+admin.php
+
+deconectare.php
+
+În folderul include, creează fișierele goale:
+
+baza_date.php
+
+autentificare.php
+
+ajutoare.php
+
+ferma.php
+
+În folderul css, creează fișierele goale:
+
+stil_general.css
+
+login.css
+
+joc_index.css
+
+profil.css
+
+admin.css
+
+ferma.css
+

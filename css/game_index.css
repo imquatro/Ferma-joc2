@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* BARA VERDE SUS FULL WIDTH, FIXA SI INGUSTA */
+.header-profil {
+    background: #004d40;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-continut {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-logout {
+    background: #00796b;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-logout:hover {
+    background: #004d40;
+}
+
+/* CONTAINER GENERAL */
+.ferma-container {
+    max-width: 800px;
+    margin: 50px auto 50px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+
+/* SECȚIUNE PROFIL */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    margin-bottom: 25px;
+}
+
+.profile-avatar {
+    width: 140px;
+    height: 140px;
+    border: 4px solid #00796b;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    margin: 0 0 10px 0;
+    color: #004d40;
+}
+
+.profile-info p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+/* FERMA */
+.ferma-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.ferma-box h2 {
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.sloturi-ferma {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.slot-ferma {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    border: 2px solid #00796b;
+}
+
+.slot-ferma img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slot-ferma p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00796b;
+}
+
+/* MENIU IN CADRU NOU */
+.meniu-box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+
+    max-width: 760px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 80px;          /* Ridicat puțin deasupra barei verzi */
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 999;
+    padding: 0;            /* Elimină padding vertical ca să nu crească înălțimea */
+}
+
+.meniu-continut {
+    display: flex;
+    justify-content: space-around;
+    max-width: 760px;  /* potrivit pentru lățimea containerului */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.meniu-continut a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.meniu-continut a.active,
+.meniu-continut a:hover {
+    background: #00796b;
+    color: white;
+}
+
+/* BARA VERDE DE JOS FULL WIDTH, FIXA SI INGUSTA */
+.footer-bar {
+    background: #004d40;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

@@ -1,0 +1,37 @@
+/* Stiluri specifice paginii setari */
+
+.setari-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.setari-box h2 {
+    color: #00796b;
+    margin-bottom: 30px;
+}
+
+.buton-membrii-online-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-membrii-online {
+    background-color: #00796b;
+    color: white;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0,121,107,0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-membrii-online:hover {
+    background-color: #004d40;
+    box-shadow: 0 8px 15px rgba(0,77,64,0.7);
+}

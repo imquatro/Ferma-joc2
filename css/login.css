@@ -1,0 +1,87 @@
+/* Stiluri generale pentru body */
+body {
+    font-family: Arial, sans-serif;
+    background: #e0f7fa; /* un albastru deschis */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Titlu principal */
+h1 {
+    color: #00695c;
+    margin-bottom: 30px;
+}
+
+/* Formulare login și înregistrare */
+form {
+    background: #ffffff;
+    padding: 20px 30px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 320px;
+    box-sizing: border-box;
+}
+
+/* Titlu formulare */
+form h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #00796b;
+    text-align: center;
+}
+
+/* Inputuri text și parolă */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 8px 0 16px 0;
+    border: 1.5px solid #00796b;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Buton submit */
+button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00251a;
+}
+
+/* Mesaj de eroare */
+.eroare {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Link de autentificare / navigare */
+a {
+    color: #00796b;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
